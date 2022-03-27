@@ -417,8 +417,7 @@ static struct http_state *http_connections;
 
 #if LWIP_HTTPD_STRNSTR_PRIVATE
 /** Like strstr but does not need 'buffer' to be NULL-terminated */
-static char*
-strnstr(const char* buffer, const char* token, size_t n)
+static char* strnstr(const char* buffer, const char* token, size_t n)
 {
   const char* p;
   int tokenlen = (int)strlen(token);

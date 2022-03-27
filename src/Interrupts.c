@@ -39,68 +39,85 @@ extern void DISCOVERY_EXTI_IRQHandler(void);
   * @param  None
   * @retval None
   */
+  /*
 void NMI_Handler(void)
 {
 }
-
+*/
+/*
 void HardFault_Handler(void)
 {
   while (1)
   {
   }
 }
+*/
 
 /**
   * @brief  This function handles Memory Manage exception.
   * @param  None
   * @retval None
   */
+/*
 void MemManage_Handler(void)
 {
+	*/
   /* Go to infinite loop when Memory Manage exception occurs */
-  while (1)
+ /*
+ while (1)
   {
   }
 }
+*/
 
 /**
   * @brief  This function handles Bus Fault exception.
   * @param  None
   * @retval None
   */
+/*
 void BusFault_Handler(void)
 {
+*/
   /* Go to infinite loop when Bus Fault exception occurs */
+/*
   while (1)
   {
   }
 }
-
+*/
 /**
   * @brief  This function handles Usage Fault exception.
   * @param  None
   * @retval None
   */
+/*
 void UsageFault_Handler(void)
 {
+*/
   /* Go to infinite loop when Usage Fault exception occurs */
-  while (1)
+/* 
+ while (1)
   {
   }
 }
+*/
 
+/*
 void SVC_Handler(void)
 {
 }
-
+*/
+/*
 void DebugMon_Handler(void)
 {
 }
-
+*/
+/*
 void PendSV_Handler(void)
 {
 }
-
+*/
 #ifdef USE_USB_OTG_FS
 void OTG_FS_WKUP_IRQHandler(void)
 {

@@ -2392,44 +2392,49 @@ static const unsigned char data__zepto_min_js[] = {
 
 
 
-const struct fsdata_file file__img_discovery_svg[] = { {
-file_NULL,
-data__img_discovery_svg,
-data__img_discovery_svg + 20,
-sizeof(data__img_discovery_svg) - 20,
-1,
+static const struct fsdata_file file__img_discovery_svg[] = {
+	{
+		file_NULL,
+		data__img_discovery_svg,
+		data__img_discovery_svg + 20,
+		sizeof(data__img_discovery_svg) - 20,
+		1,
+	}
+};
+
+static const struct fsdata_file file__404_html[] = {
+	{
+		file__img_discovery_svg,
+		data__404_html,
+		data__404_html + 12,
+		sizeof(data__404_html) - 12,
+		1,
+	}
+};
+
+static const struct fsdata_file file__index_html[] = { {
+	file__404_html,
+	data__index_html,
+	data__index_html + 12,
+	sizeof(data__index_html) - 12,
+	1,
 }};
 
-const struct fsdata_file file__404_html[] = { {
-file__img_discovery_svg,
-data__404_html,
-data__404_html + 12,
-sizeof(data__404_html) - 12,
-1,
+static const struct fsdata_file file__state_shtml[] = { {
+	file__index_html,
+	data__state_shtml,
+	data__state_shtml + 16,
+	sizeof(data__state_shtml) - 16,
+	1,
 }};
 
-const struct fsdata_file file__index_html[] = { {
-file__404_html,
-data__index_html,
-data__index_html + 12,
-sizeof(data__index_html) - 12,
-1,
-}};
 
-const struct fsdata_file file__state_shtml[] = { {
-file__index_html,
-data__state_shtml,
-data__state_shtml + 16,
-sizeof(data__state_shtml) - 16,
-1,
-}};
-
-const struct fsdata_file file__zepto_min_js[] = { {
-file__state_shtml,
-data__zepto_min_js,
-data__zepto_min_js + 16,
-sizeof(data__zepto_min_js) - 16,
-1,
+static const struct fsdata_file file__zepto_min_js[] = { {
+	file__state_shtml,
+	data__zepto_min_js,
+	data__zepto_min_js + 16,
+	sizeof(data__zepto_min_js) - 16,
+	1,
 }};
 
 #define FS_ROOT file__zepto_min_js
