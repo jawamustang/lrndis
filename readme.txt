@@ -1,5 +1,5 @@
 Not working yet. 
-Version for free arm gcc.
+I am trying to match code for arm-none-eabi-gcc.
 RNDIS driver for STM32F4-discovery example (ver 1.1)
 
 Demonstration video: http://www.youtube.com/watch?v=hsqWIqY8b6A
