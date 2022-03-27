@@ -1,5 +1,7 @@
-Not working yet. 
-I am trying to match code for arm-none-eabi-gcc.
+Update to arm-none-eabi-gcc compatibility.
+ 
+( I prefer to use free compiler <3 )
+
 RNDIS driver for STM32F4-discovery example (ver 1.1)
 
 Demonstration video: http://www.youtube.com/watch?v=hsqWIqY8b6A
