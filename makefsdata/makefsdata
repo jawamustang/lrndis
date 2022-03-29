@@ -88,7 +88,7 @@ for($i = 0; $i < @fvars; $i++) {
     } else {
         $prevfile = "file" . $fvars[$i - 1];
     }
-    print(OUTPUT "const struct fsdata_file file".$fvar."[] = {{$prevfile, data$fvar, ");
+    print(OUTPUT "static const struct fsdata_file file".$fvar."[] = {{$prevfile, data$fvar, ");
     print(OUTPUT "data$fvar + ". (length($file) + 1) .", ");
     print(OUTPUT "sizeof(data$fvar) - ". (length($file) + 1) ."}};\n\n");
 }

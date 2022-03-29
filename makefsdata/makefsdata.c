@@ -118,7 +118,7 @@ int main(int argc, char *argv[])
   int filesProcessed;
   int i;
   char targetfile[MAX_PATH_LEN];
-  strcpy(targetfile, "..\\project\\fsdata.c");
+  strcpy(targetfile, "..\\src\\fsdata.c");
 
   memset(path, 0, sizeof(path));
   memset(appPath, 0, sizeof(appPath));
@@ -432,7 +432,7 @@ int process_file(FILE *data_file, FILE *struct_file, const char *filename)
   }
 
   /* build declaration of struct fsdata_file in temp file */
-  fprintf(struct_file, "const struct fsdata_file file_%s[] = { {" NEWLINE, varname);
+  fprintf(struct_file, "static const struct fsdata_file file_%s[] = { {" NEWLINE, varname);
   fprintf(struct_file, "file_%s," NEWLINE, lastFileVar);
   fprintf(struct_file, "data_%s," NEWLINE, varname);
   fprintf(struct_file, "data_%s + %d," NEWLINE, varname, i);
