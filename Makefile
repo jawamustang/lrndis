@@ -20,43 +20,43 @@ SRCS = src/main.c\
 			usb-core/otg-driver/usb_dcd.c\
 			usb-core/otg-driver/usb_dcd_int.c\
 			\
-			lrndis/lwip-1.4.1/src/core/def.c\
-			lrndis/lwip-1.4.1/src/core/dhcp.c\
-			lrndis/lwip-1.4.1/src/core/dns.c\
-			lrndis/lwip-1.4.1/src/core/init.c\
-			lrndis/lwip-1.4.1/src/core/mem.c\
-			lrndis/lwip-1.4.1/src/core/memp.c\
-			lrndis/lwip-1.4.1/src/core/netif.c\
-			lrndis/lwip-1.4.1/src/core/pbuf.c\
-			lrndis/lwip-1.4.1/src/core/raw.c\
-			lrndis/lwip-1.4.1/src/core/stats.c\
-			lrndis/lwip-1.4.1/src/core/sys.c\
-			lrndis/lwip-1.4.1/src/core/tcp.c\
-			lrndis/lwip-1.4.1/src/core/tcp_in.c\
-			lrndis/lwip-1.4.1/src/core/tcp_out.c\
-			lrndis/lwip-1.4.1/src/core/timers.c\
-			lrndis/lwip-1.4.1/src/core/udp.c\
-			lrndis/lwip-1.4.1/src/core/ipv4/autoip.c\
-			lrndis/lwip-1.4.1/src/core/ipv4/icmp.c\
-			lrndis/lwip-1.4.1/src/core/ipv4/igmp.c\
-			lrndis/lwip-1.4.1/src/core/ipv4/inet.c\
-			lrndis/lwip-1.4.1/src/core/ipv4/inet_chksum.c\
-			lrndis/lwip-1.4.1/src/core/ipv4/ip.c\
-			lrndis/lwip-1.4.1/src/core/ipv4/ip_addr.c\
-			lrndis/lwip-1.4.1/src/core/ipv4/ip_frag.c\
-			lrndis/lwip-1.4.1/src/netif/etharp.c\
-			lrndis/lwip-1.4.1/src/netif/ethernetif.c\
-			lrndis/lwip-1.4.1/src/netif/slipif.c\
+			lwip/lwip-1.4.1/src/core/def.c\
+			lwip/lwip-1.4.1/src/core/dhcp.c\
+			lwip/lwip-1.4.1/src/core/dns.c\
+			lwip/lwip-1.4.1/src/core/init.c\
+			lwip/lwip-1.4.1/src/core/mem.c\
+			lwip/lwip-1.4.1/src/core/memp.c\
+			lwip/lwip-1.4.1/src/core/netif.c\
+			lwip/lwip-1.4.1/src/core/pbuf.c\
+			lwip/lwip-1.4.1/src/core/raw.c\
+			lwip/lwip-1.4.1/src/core/stats.c\
+			lwip/lwip-1.4.1/src/core/sys.c\
+			lwip/lwip-1.4.1/src/core/tcp.c\
+			lwip/lwip-1.4.1/src/core/tcp_in.c\
+			lwip/lwip-1.4.1/src/core/tcp_out.c\
+			lwip/lwip-1.4.1/src/core/timers.c\
+			lwip/lwip-1.4.1/src/core/udp.c\
+			lwip/lwip-1.4.1/src/core/ipv4/autoip.c\
+			lwip/lwip-1.4.1/src/core/ipv4/icmp.c\
+			lwip/lwip-1.4.1/src/core/ipv4/igmp.c\
+			lwip/lwip-1.4.1/src/core/ipv4/inet.c\
+			lwip/lwip-1.4.1/src/core/ipv4/inet_chksum.c\
+			lwip/lwip-1.4.1/src/core/ipv4/ip.c\
+			lwip/lwip-1.4.1/src/core/ipv4/ip_addr.c\
+			lwip/lwip-1.4.1/src/core/ipv4/ip_frag.c\
+			lwip/lwip-1.4.1/src/netif/etharp.c\
+			lwip/lwip-1.4.1/src/netif/ethernetif.c\
+			lwip/lwip-1.4.1/src/netif/slipif.c\
 			\
-			lrndis/rndis-stm32/usbd_rndis_core.c\
-			lrndis/rndis-stm32/usbd_desc.c\
+			lwip/rndis-stm32/usbd_rndis_core.c\
+			lwip/rndis-stm32/usbd_desc.c\
 			\
-			lrndis/dhcp-server/dhserver.c\
+			lwip/dhcp-server/dhserver.c\
 			\
-			lrndis/dns-server/dnserver.c\
+			lwip/dns-server/dnserver.c\
 			\
-			lrndis/lwip-1.4.1/apps/httpserver_raw/fs.c\
-			lrndis/lwip-1.4.1/apps/httpserver_raw/httpd.c\
+			lwip/lwip-1.4.1/apps/httpserver_raw/fs.c\
+			lwip/lwip-1.4.1/apps/httpserver_raw/httpd.c\
 
 
 
@@ -98,12 +98,12 @@ CFLAGS += -I usb-core/dev-driver
 CFLAGS += -I usb-core/otg-driver 
 CFLAGS += -I usb-files 
 CFLAGS += -I usb-files/rndis 
-CFLAGS += -I lrndis/lwip-1.4.1/src/include 
-CFLAGS += -I lrndis/lwip-1.4.1/src/include/ipv4 
-CFLAGS += -I lrndis/rndis-stm32 
-CFLAGS += -I lrndis/dhcp-server 
-CFLAGS += -I lrndis/dns-server 
-CFLAGS += -I lrndis/lwip-1.4.1/apps/httpserver_raw
+CFLAGS += -I lwip/lwip-1.4.1/src/include 
+CFLAGS += -I lwip/lwip-1.4.1/src/include/ipv4 
+CFLAGS += -I lwip/rndis-stm32 
+CFLAGS += -I lwip/dhcp-server 
+CFLAGS += -I lwip/dns-server 
+CFLAGS += -I lwip/lwip-1.4.1/apps/httpserver_raw
 
 SRCS += lib/startup_stm32f4xx.s # add startup file to build
 
